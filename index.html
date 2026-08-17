@@ -34,7 +34,35 @@ footer{padding:40px 0;border-top:1px solid rgba(255,255,255,.07);color:#85818d}.
 @media(max-width:1000px){.links{display:none}.products{grid-template-columns:repeat(3,1fr)}.cats{grid-template-columns:repeat(3,1fr)}.heroGrid{grid-template-columns:1fr}.heroArt{height:320px}.pick{grid-template-columns:1fr}.why{grid-template-columns:repeat(2,1fr)}.news{display:block}.form{min-width:0;margin-top:18px}}
 @media(max-width:600px){.wrap{width:calc(100% - 20px)}.navin{height:65px}.search{display:none}.hero{padding:28px 20px}.hero h1{font-size:44px}.heroArt{height:280px}.orb{width:210px;height:210px;right:45px}.productHero{width:160px;height:190px;right:70px;font-size:70px}.rating{right:-3px}.shoppers{right:0}.products{grid-template-columns:repeat(2,1fr)}.pimage{height:145px}.cats{grid-template-columns:repeat(2,1fr)}.compare{grid-template-columns:1fr}.compareGrid{grid-template-columns:1fr 40px 1fr}.comparePic{height:90px}.why{grid-template-columns:1fr}.trust{grid-template-columns:1fr}.foot{grid-template-columns:1fr 1fr}.form{display:block}.form input,.form button{width:100%;margin-bottom:7px}}
 
-.productHero img{width:100%;height:100%;object-fit:cover;border-radius:22px;display:block}
+
+
+
+.productHero{
+  overflow:hidden;
+  padding:0;
+}
+.productHero img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+  border-radius:22px;
+  background:radial-gradient(circle at 50% 42%,rgba(89,50,147,.35),rgba(3,3,5,.12) 60%,rgba(3,3,5,.0));
+  padding:14px;
+  image-rendering:auto;
+}
+.pimage{
+  overflow:hidden;
+}
+.pimage .trend-product-img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+  padding:14px 18px 12px;
+  background:radial-gradient(circle at 50% 45%,rgba(89,50,147,.25),transparent 58%);
+  image-rendering:auto;
+}
 
 </style>
 </head>
@@ -57,16 +85,14 @@ footer{padding:40px 0;border-top:1px solid rgba(255,255,255,.07);color:#85818d}.
 <div class="btns"><a class="btn primary" href="#trending">Explore Trending Products →</a><a class="btn secondary" href="#why">▷ How It Works</a></div>
 <div class="trust"><div>★ <b>Top Rated Products</b>Only quality picks</div><div>▣ <b>Price Comparison</b>Get the best value</div><div>✓ <b>Safe & Secure</b>Verified stores only</div></div>
 </div>
-<div class="heroArt"><div class="orb"></div><div class="productHero" style="padding:20px"><img src="vichy-hero.png" alt="Vichy Dercos Densi-Solutions"></div><div class="float rating">★ <b>4.5</b><br><span>981 reviews</span></div><div class="float shoppers">💡 <b>Smart pick • Verified deal</b></div><div class="spark s1">✦</div><div class="spark s2">✦</div><div class="spark s3">✦</div></div>
+<div class="heroArt"><div class="orb"></div><div class="productHero"><img src="vichy-product.webp" alt="Vichy Dercos Densi-Solutions"></div><div class="float rating">★ <b>4.5</b><br><span>981 reviews</span></div><div class="float shoppers">💡 <b>Smart pick • Verified deal</b></div><div class="spark s1">✦</div><div class="spark s2">✦</div><div class="spark s3">✦</div></div>
 </div></div>
 </section>
 
 <section id="trending"><div class="wrap"><div class="sectionHead"><div><h2>🔥 TRENDING NOW</h2><p>Products getting attention right now.</p></div><a class="see" href="#">See all →</a></div>
 <div class="products">
 <article class="product glass" style="cursor:pointer" onclick="window.open('https://s.noon.com/7xvazsp6ZAg','_blank','noopener,noreferrer')"><div class="pimage" style="padding:18px"><span class="badge hot">GRAZIA PICK</span><img src="https://f.nooncdn.com/p/pzsku/Z1F3739E081AE911403C8Z/45/_/1779345518/fd8fb6ba-ea42-4e3b-b3ae-1a6187c2baa4.jpg?width=original" alt="Vichy Dercos Densi-Solutions Hair Thickening Treatment 100ml" style="max-width:100%;max-height:155px;object-fit:contain;filter:drop-shadow(0 20px 25px rgba(0,0,0,.45))" loading="eager"></div><div class="pbody"><div class="cat">Beauty • Hair Care</div><h3>Vichy Dercos Densi-Solutions 100ml</h3><span class="price">EGP 1,899</span><div class="stars">★ 4.5 (981)</div><div style="margin-top:9px"><span class="btn primary" style="display:inline-block;padding:9px 11px;font-size:10px">View Deal →</span></div></div></article>
-<article class="product glass"><div class="pimage"><span class="badge new">-15%</span>⌚</div><div class="pbody"><div class="cat">Wearables</div><h3>Samsung Galaxy Watch</h3><span class="price">$229.00</span><span class="old">$269.00</span><div class="stars">★ 4.7 (8.3K)</div></div></article>
-<article class="product glass"><div class="pimage"><span class="badge hot">HOT</span>🔊</div><div class="pbody"><div class="cat">Audio</div><h3>JBL Charge 5 Speaker</h3><span class="price">$129.00</span><div class="stars">★ 4.6 (5.4K)</div></div></article>
-<article class="product glass"><div class="pimage"><span class="badge discount">-18%</span>🧴</div><div class="pbody"><div class="cat">Beauty</div><h3>Dior Sauvage Eau de Parfum</h3><span class="price">$89.00</span><span class="old">$109.00</span><div class="stars">★ 4.7 (6.1K)</div></div></article>
+<article class="product glass"><div class="pimage"><span class="badge hot">GRAZIA</span><img class="trend-product-img" src="vichy-product.webp" alt="Vichy Dercos Densi-Solutions"></div><div class="pbody"><div class="cat">Beauty</div><h3>Dior Sauvage Eau de Parfum</h3><span class="price">$89.00</span><span class="old">$109.00</span><div class="stars">★ 4.7 (6.1K)</div></div></article>
 <article class="product glass"><div class="pimage"><span class="badge new">NEW</span>💡</div><div class="pbody"><div class="cat">Home</div><h3>Smart LED Mood Lamp</h3><span class="price">$39.00</span><div class="stars">★ 4.6 (2.2K)</div></div></article>
 </div></div></section>
 
